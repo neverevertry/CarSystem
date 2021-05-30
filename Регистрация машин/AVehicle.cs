@@ -8,8 +8,8 @@ namespace Регистрация_машин
     {
         protected int PassangerNumbers;
         protected int MaxSpeed;
-        protected string RegistrationNumb;
-        protected int CurrentSpeed;
+        public string RegistrationNumb { get; }
+        public int CurrentSpeed { get; }
         protected ColorCar colorcar;
 
         public AVehicle(int _PN, int _MSP, string _RN, int _CS, ColorCar _ColorCar)
@@ -21,8 +21,10 @@ namespace Регистрация_машин
             colorcar = _ColorCar;
         }
 
-        public abstract int GetSpeed();
-        public abstract void ShowInfo();
-        public abstract string GetNumb();
+        public void ShowInfo()
+        {
+            Console.WriteLine($"Скорость: {CurrentSpeed}, Регистрационный номер машины: {RegistrationNumb}");
+        }
+
     }
 }

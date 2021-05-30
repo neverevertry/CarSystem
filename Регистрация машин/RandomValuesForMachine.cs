@@ -4,27 +4,21 @@ using System.Text;
 
 namespace Регистрация_машин
 {
-    class RandomValuesForMachine
+    class RandomVehicleGenerator
     {
-        private string RandomRegisterNumb;
+        private const string AvailableValuesForRegNumber = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890";
         private int CurrentSpeed;
-        private Random random;
 
-        public RandomValuesForMachine()
+        public AVehicle GenerateRandomVehicle()
         {
-            RandomRegisterNumb = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890";
-            random = new Random();
-        }
-
-        public AVehicle GetRandomVehicle()
-        {
+            Random random = new Random();
             string RegNumb = "";
 
-            RegNumb += RandomRegisterNumb[random.Next(0, 25)];
+            RegNumb += AvailableValuesForRegNumber[random.Next(0, 25)];
             for (int i = 0; i < 3; i++)
-                RegNumb += RandomRegisterNumb[random.Next(26, 34)];
-            RegNumb += RandomRegisterNumb[random.Next(0, 25)];
-            RegNumb += RandomRegisterNumb[random.Next(0, 25)];
+                RegNumb += AvailableValuesForRegNumber[random.Next(26, 34)];
+            RegNumb += AvailableValuesForRegNumber[random.Next(0, 25)];
+            RegNumb += AvailableValuesForRegNumber[random.Next(0, 25)];
             CurrentSpeed = random.Next(70, 150);
 
 

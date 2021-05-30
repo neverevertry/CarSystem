@@ -12,7 +12,7 @@ namespace Регистрация_машин
         private int CarCount = 0;
         private int CargoCount = 0;
         private int BusCount = 0;
-        private int StolenCarsCount = 0;
+        private int RegNumbersOfStolenCars = 0;
 
         public void MonitorInfo(AVehicle transoprt)
         {
@@ -45,12 +45,12 @@ namespace Регистрация_машин
             Console.WriteLine("Кол-во автобусов: " + BusCount);
             Console.WriteLine("Общее кол-во машин: " + (CarCount + CargoCount + BusCount));
             Console.WriteLine("Кол-во машин нарувшие скоростной режим: " + carList.Count());
-            Console.WriteLine("Кол-во машин зафиксированных в угоне: " + StolenCarsCount);
+            Console.WriteLine("Кол-во машин зафиксированных в угоне: " + RegNumbersOfStolenCars);
         }
 
         public void Excess(AVehicle transoprt)
         {
-            if (transoprt.GetSpeed() > 110)
+            if (transoprt.CurrentSpeed > 110)
             {
                 carList.Add(transoprt);
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -61,12 +61,12 @@ namespace Регистрация_машин
 
         public void CheckStolenCar(AVehicle car)
         {
-            if (NumStolenCars.Contains(car.GetNumb()))
+            if (NumStolenCars.Contains(car.RegistrationNumb))
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Перехват!");
                 Console.ResetColor();
-                StolenCarsCount++;
+                RegNumbersOfStolenCars++;
             }
         }
         public void MonitorShowIntuder()
