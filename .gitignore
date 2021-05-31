@@ -5,3 +5,7 @@
 *.json
 *.props
 *.targets
+/obj/
+/.vs/
+/bin/
+название веток.txt
