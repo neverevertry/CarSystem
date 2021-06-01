@@ -8,22 +8,18 @@ namespace Регистрация_машин
     {
         static void Main(string[] args)
         {
-            CarCheckingSystem css = new CarCheckingSystem();
+            StartSystem ss = new StartSystem();
             ConsoleKeyInfo input;
             Console.WriteLine("1.Press 1 to start 2 to exit");
 
             do
             {
                 input = Console.ReadKey();
-                RandomVehicleGenerator rvfm = new RandomVehicleGenerator();
-                AVehicle ahv = rvfm.GenerateRandomVehicle();
-                css.MonitorInfo(ahv);
-                css.Excess(ahv);
-                css.CheckStolenCar(ahv);
+                ss.StartCheckSys();
 
             } while (input.Key!=ConsoleKey.NumPad2);
-            css.MonitorShowIntuder();
-            css.InfoAboutAllCar();
+
+            ss.StopSystem();
         }
     }
 }
