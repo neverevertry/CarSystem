@@ -19,7 +19,15 @@ namespace Регистрация_машин
 
             } while (input.Key!=ConsoleKey.NumPad2);
 
-            ss.StopSystem();
+            
+            Reporter res = ss.StopSystem();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Кол-во легковых автомобилей: " + res.CarCount);
+            Console.WriteLine("Кол-во грузовых автомобилей: " + res.CargoCount);
+            Console.WriteLine("Кол-во автобусов: " + res.BusCount);
+            Console.WriteLine("Общее кол-во машин: " + res.TotalPassedCars);
+            Console.WriteLine("Кол-во машин нарувшие скоростной режим: " + res.TotalSpeedViolatedCars);
+            Console.WriteLine("Кол-во машин зафиксированных в угоне: " + res.CountOfStolenCars);
         }
     }
 }

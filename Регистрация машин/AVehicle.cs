@@ -21,9 +21,9 @@ namespace Регистрация_машин
             colorcar = _ColorCar;
         }
 
-        public void ShowInfo()
+        public string ShowInfo()
         {
-            Console.WriteLine($"Скорость: {CurrentSpeed}, Регистрационный номер машины: {RegistrationNumb}");
+            return $"Скорость: {CurrentSpeed}, Регистрационный номер машины: {RegistrationNumb}";
         }
 
     }

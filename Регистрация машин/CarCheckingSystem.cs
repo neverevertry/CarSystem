@@ -9,10 +9,7 @@ namespace Регистрация_машин
     {
         private List<AVehicle> carList = new List<AVehicle>();
         private List<string> NumStolenCars = new List<string>();
-        private int CarCount = 0;
-        private int CargoCount = 0;
-        private int BusCount = 0;
-        private int RegNumbersOfStolenCars = 0;
+        public Reporter reporter = new Reporter();
 
         public void MonitorInfo(AVehicle transoprt)
         {
@@ -21,31 +18,27 @@ namespace Регистрация_машин
             {
                 Console.WriteLine("Тип машины: Легковая машина");
                 Console.WriteLine();
-                CarCount++;
+                reporter.CarCount++;
             }
             if (transoprt is Cargo)
             {
                 Console.WriteLine("Тип машины: Грузовая машина");
                 Console.WriteLine();
-                CargoCount++;
+                reporter.CargoCount++;
             }
             if (transoprt is Bus)
             {
                 Console.WriteLine("Тип машины: Автобус");
                 Console.WriteLine();
-                BusCount++;
+                reporter.BusCount++;
             }
         }
 
-        public void InfoAboutAllCar()
+        public Reporter GetReport()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Кол-во легковых автомобилей: " + CarCount);
-            Console.WriteLine("Кол-во грузовых автомобилей: " + CargoCount);
-            Console.WriteLine("Кол-во автобусов: " + BusCount);
-            Console.WriteLine("Общее кол-во машин: " + (CarCount + CargoCount + BusCount));
-            Console.WriteLine("Кол-во машин нарувшие скоростной режим: " + carList.Count());
-            Console.WriteLine("Кол-во машин зафиксированных в угоне: " + RegNumbersOfStolenCars);
+            reporter.TotalPassedCars = reporter.CarCount + reporter.BusCount + reporter.CargoCount;
+            reporter.TotalSpeedViolatedCars = carList.Count();
+            return reporter;
         }
 
         public void Excess(AVehicle transoprt)
@@ -66,7 +59,7 @@ namespace Регистрация_машин
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Перехват!");
                 Console.ResetColor();
-                RegNumbersOfStolenCars++;
+                reporter.CountOfStolenCars++;
             }
         }
         public void MonitorShowIntuder()

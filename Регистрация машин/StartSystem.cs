@@ -16,10 +16,10 @@ namespace Регистрация_машин
             ccs.Excess(avh);
             ccs.CheckStolenCar(avh);
         }
-        public void StopSystem()
+        public Reporter StopSystem()
         {
             ccs.MonitorShowIntuder();
-            ccs.InfoAboutAllCar();
+            return ccs.GetReport();
         }
     }
 }
