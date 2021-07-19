@@ -5,6 +5,7 @@
 *.json
 *.props
 *.targets
+*.suo
 /obj/
 /.vs/
 /bin/
