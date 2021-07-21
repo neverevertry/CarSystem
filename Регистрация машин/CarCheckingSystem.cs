@@ -8,9 +8,10 @@ namespace Регистрация_машин
     {
         private List<AVehicle> carList = new List<AVehicle>();
         private List<string> NumStolenCars = new List<string>(); 
-        public Reporter reporter = new Reporter();
+        private Reporter reporter = new Reporter();
         public Action<AVehicle, string> CH;
-        public void MonitorInfo(AVehicle transoprt)
+       
+        private void MonitorInfo(AVehicle transoprt)
         {
             if (transoprt is Car)
             {
@@ -32,14 +33,14 @@ namespace Регистрация_машин
             }
         }
 
-        public Reporter GetReport()
+        private Reporter GetReport()
         {
             reporter.TotalPassedCars = reporter.CarCount + reporter.BusCount + reporter.CargoCount;
             reporter.TotalSpeedViolatedCars = carList.Count();
             return reporter;
         }
 
-        public void Excess(AVehicle transoprt)
+        private void Excess(AVehicle transoprt)
         {
             if (transoprt.CurrentSpeed > 110)
             {
@@ -49,7 +50,7 @@ namespace Регистрация_машин
             }
         }
 
-        public void CheckStolenCar(AVehicle car)
+        private void CheckStolenCar(AVehicle car)
         {
             if (NumStolenCars.Contains(car.RegistrationNumb))
             {
@@ -57,6 +58,19 @@ namespace Регистрация_машин
                 CH.Invoke(car, InterceptionReport);
                 reporter.CountOfStolenCars++;
             }
+        }
+
+        public void StartSystem(CarCheckingSystem ccs)
+        {
+            AVehicle avh = RandomVehicleGenerator.GenerateRandomVehicle();
+            ccs.MonitorInfo(avh);
+            ccs.Excess(avh);
+            ccs.CheckStolenCar(avh);
+        }
+
+        public Reporter StopSystem(CarCheckingSystem ccs)
+        {
+            return ccs.GetReport();
         }
     }
 }

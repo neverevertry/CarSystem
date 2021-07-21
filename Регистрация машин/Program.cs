@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 
 namespace Регистрация_машин
@@ -7,15 +9,15 @@ namespace Регистрация_машин
     {
         static void Main(string[] args)
         {
-            StartSystem ss = new StartSystem();
-            ss.ccs.CH = CarStolen;
+            CarCheckingSystem ccs = new CarCheckingSystem();
+            ccs.CH = CarStolen;
             Console.WriteLine("1.Press 1 to start 2 to exit");
 
             if (Console.ReadKey(true).Key == ConsoleKey.S)
             {
                 while(true)
                 {
-                    ss.StartCheckSys();
+                    ccs.StartSystem(ccs);
                     Thread.Sleep(5000);
                     if (Console.KeyAvailable == true)
                     {
@@ -25,8 +27,7 @@ namespace Регистрация_машин
                 }
             }
 
-            
-            Reporter res = ss.StopSystem();
+            Reporter res = ccs.StopSystem(ccs);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Кол-во легковых автомобилей: " + res.CarCount);
             Console.WriteLine("Кол-во грузовых автомобилей: " + res.CargoCount);
