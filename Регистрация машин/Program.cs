@@ -37,9 +37,7 @@ namespace Регистрация_машин
 
             void CarStolen(AVehicle car, string report)
             {
-                string blabla = car.ShowInfo();
-
-                Console.WriteLine(report + "\t" + blabla);
+                Console.WriteLine(report + "\t" + car.ShowInfo());
             }
         }
     }
