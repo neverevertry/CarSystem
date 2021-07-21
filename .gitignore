@@ -7,6 +7,5 @@
 *.targets
 *.suo
 /obj/
-/.vs/
 /bin/
-название веток.txt
+.vs
