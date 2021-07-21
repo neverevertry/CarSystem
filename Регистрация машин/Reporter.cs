@@ -12,6 +12,6 @@ namespace Регистрация_машин
         public int CountOfStolenCars { get; set; }
 
         public int TotalPassedCars { get; set; }
-        public int TotalSpeedViolatedCars { get; set }
+        public int TotalSpeedViolatedCars { get; set; }
     }
 }

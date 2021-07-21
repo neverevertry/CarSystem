@@ -6,7 +6,7 @@ namespace Регистрация_машин
 {
     class StartSystem
     {
-        private CarCheckingSystem ccs = new CarCheckingSystem();
+        public CarCheckingSystem ccs = new CarCheckingSystem();
         private RandomVehicleGenerator rand = new RandomVehicleGenerator();
 
         public void StartCheckSys()
