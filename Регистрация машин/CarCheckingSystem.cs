@@ -9,7 +9,7 @@ namespace Регистрация_машин
         private List<AVehicle> carList = new List<AVehicle>();
         private List<string> NumStolenCars = new List<string>(); 
         private Reporter reporter = new Reporter();
-        public Action<AVehicle, string> CH;
+        public Action<AVehicle, string> HandlerInfoCar;
        
         private void MonitorInfo(AVehicle transoprt)
         {
@@ -17,19 +17,19 @@ namespace Регистрация_машин
             {
                 string ReportPassangerCar = "Легковая машина";
                 reporter.CarCount++;
-                CH.Invoke(transoprt, ReportPassangerCar);
+                HandlerInfoCar.Invoke(transoprt, ReportPassangerCar);
             }
             if (transoprt is Cargo)
             {
                 string ReportCargoCar = "Грузовая машина";
                 reporter.CargoCount++;
-                CH.Invoke(transoprt, ReportCargoCar);
+                HandlerInfoCar.Invoke(transoprt, ReportCargoCar);
             }
             if (transoprt is Bus)
             {
                 string ReportBus = "Автобус";
                 reporter.BusCount++;
-                CH.Invoke(transoprt, ReportBus);
+                HandlerInfoCar.Invoke(transoprt, ReportBus);
             }
         }
 
@@ -46,7 +46,7 @@ namespace Регистрация_машин
             {
                 carList.Add(transoprt);
                 string ReportSpeed = "Превышение скорости";
-                CH.Invoke(transoprt, ReportSpeed);
+                HandlerInfoCar.Invoke(transoprt, ReportSpeed);
             }
         }
 
@@ -55,22 +55,22 @@ namespace Регистрация_машин
             if (NumStolenCars.Contains(car.RegistrationNumb))
             {
                 string InterceptionReport = "Перехват";
-                CH.Invoke(car, InterceptionReport);
+                HandlerInfoCar.Invoke(car, InterceptionReport);
                 reporter.CountOfStolenCars++;
             }
         }
 
-        public void StartSystem(CarCheckingSystem ccs)
+        public void StartSystem()
         {
             AVehicle avh = RandomVehicleGenerator.GenerateRandomVehicle();
-            ccs.MonitorInfo(avh);
-            ccs.Excess(avh);
-            ccs.CheckStolenCar(avh);
+            MonitorInfo(avh);
+            Excess(avh);
+            CheckStolenCar(avh);
         }
 
-        public Reporter StopSystem(CarCheckingSystem ccs)
+        public Reporter StopSystem()
         {
-            return ccs.GetReport();
+            return GetReport();
         }
     }
 }

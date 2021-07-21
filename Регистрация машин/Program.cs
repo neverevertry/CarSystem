@@ -10,14 +10,14 @@ namespace Регистрация_машин
         static void Main(string[] args)
         {
             CarCheckingSystem ccs = new CarCheckingSystem();
-            ccs.CH = CarStolen;
+            ccs.HandlerInfoCar = CarInfo;
             Console.WriteLine("1.Press 1 to start 2 to exit");
 
             if (Console.ReadKey(true).Key == ConsoleKey.S)
             {
                 while(true)
                 {
-                    ccs.StartSystem(ccs);
+                    ccs.StartSystem();
                     Thread.Sleep(5000);
                     if (Console.KeyAvailable == true)
                     {
@@ -27,7 +27,7 @@ namespace Регистрация_машин
                 }
             }
 
-            Reporter res = ccs.StopSystem(ccs);
+            Reporter res = ccs.StopSystem();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Кол-во легковых автомобилей: " + res.CarCount);
             Console.WriteLine("Кол-во грузовых автомобилей: " + res.CargoCount);
@@ -36,7 +36,7 @@ namespace Регистрация_машин
             Console.WriteLine("Кол-во машин нарувшие скоростной режим: " + res.TotalSpeedViolatedCars);
             Console.WriteLine("Кол-во машин зафиксированных в угоне: " + res.CountOfStolenCars);
 
-            void CarStolen(AVehicle car, string report)
+            void CarInfo(AVehicle car, string report)
             {
                 Console.WriteLine(report + "\t" + car.ShowInfo());
             }
