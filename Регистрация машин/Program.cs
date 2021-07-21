@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 
 namespace Регистрация_машин
@@ -39,8 +37,9 @@ namespace Регистрация_машин
 
             void CarStolen(AVehicle car, string report)
             {
-                Console.WriteLine(report + "\t" + car.ShowInfo());
+                string blabla = car.ShowInfo();
 
+                Console.WriteLine(report + "\t" + blabla);
             }
         }
     }

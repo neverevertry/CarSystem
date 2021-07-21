@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Регистрация_машин
 {
-    delegate void CarHendline(AVehicle avh, string report);
     class CarCheckingSystem
     {
         private List<AVehicle> carList = new List<AVehicle>();
         private List<string> NumStolenCars = new List<string>(); 
         public Reporter reporter = new Reporter();
-        public CarHendline CH;
+        public Action<AVehicle, string> CH;
         public void MonitorInfo(AVehicle transoprt)
         {
             if (transoprt is Car)
@@ -58,15 +56,6 @@ namespace Регистрация_машин
                 string InterceptionReport = "Перехват";
                 CH.Invoke(car, InterceptionReport);
                 reporter.CountOfStolenCars++;
-            }
-        }
-        public void MonitorShowIntuder()
-        {
-            foreach (var car in carList)
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow; 
-                car.ShowInfo();
-                Console.ResetColor();
             }
         }
     }
