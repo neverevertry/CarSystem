@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Регистрация_машин
+﻿namespace Регистрация_машин
 {
     abstract class AVehicle
     {

@@ -1,36 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Регистрация_машин
 {
     class CarCheckingSystem
     {
         private List<AVehicle> carList = new List<AVehicle>();
-        private List<string> NumStolenCars = new List<string>();
+        private List<string> NumStolenCars = new List<string>(); 
         public Reporter reporter = new Reporter();
-
+        public Action<AVehicle, string> CH;
         public void MonitorInfo(AVehicle transoprt)
         {
-            transoprt.ShowInfo();
             if (transoprt is Car)
             {
-                Console.WriteLine("Тип машины: Легковая машина");
-                Console.WriteLine();
+                string ReportPassangerCar = "Легковая машина";
                 reporter.CarCount++;
+                CH.Invoke(transoprt, ReportPassangerCar);
             }
             if (transoprt is Cargo)
             {
-                Console.WriteLine("Тип машины: Грузовая машина");
-                Console.WriteLine();
+                string ReportCargoCar = "Грузовая машина";
                 reporter.CargoCount++;
+                CH.Invoke(transoprt, ReportCargoCar);
             }
             if (transoprt is Bus)
             {
-                Console.WriteLine("Тип машины: Автобус");
-                Console.WriteLine();
+                string ReportBus = "Автобус";
                 reporter.BusCount++;
+                CH.Invoke(transoprt, ReportBus);
             }
         }
 
@@ -46,9 +44,8 @@ namespace Регистрация_машин
             if (transoprt.CurrentSpeed > 110)
             {
                 carList.Add(transoprt);
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Превышение скорости!");
-                Console.ResetColor();
+                string ReportSpeed = "Превышение скорости";
+                CH.Invoke(transoprt, ReportSpeed);
             }
         }
 
@@ -56,19 +53,9 @@ namespace Регистрация_машин
         {
             if (NumStolenCars.Contains(car.RegistrationNumb))
             {
-                Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("Перехват!");
-                Console.ResetColor();
+                string InterceptionReport = "Перехват";
+                CH.Invoke(car, InterceptionReport);
                 reporter.CountOfStolenCars++;
-            }
-        }
-        public void MonitorShowIntuder()
-        {
-            foreach (var car in carList)
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                car.ShowInfo();
-                Console.ResetColor();
             }
         }
     }
