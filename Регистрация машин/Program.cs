@@ -10,8 +10,8 @@ namespace Регистрация_машин
         static void Main(string[] args)
         {
             CarCheckingSystem ccs = new CarCheckingSystem();
-            ccs.HandlerInfoCar = CarInfo;
-            Console.WriteLine("1.Press 1 to start 2 to exit");
+            ccs.HandlerInfoCar += CarInfo;
+            Console.WriteLine("1.Press S to start Q to exit, I to import Car into base to system");
 
             if (Console.ReadKey(true).Key == ConsoleKey.S)
             {
@@ -23,6 +23,8 @@ namespace Регистрация_машин
                     {
                         if (Console.ReadKey(true).Key == ConsoleKey.Q)
                             break;
+                        if (Console.ReadKey(true).Key == ConsoleKey.I)
+                            ReadIntoBaseToListAvehicle.ReadIntoBaseToListHijackedCar(ccs);
                     }
                 }
             }

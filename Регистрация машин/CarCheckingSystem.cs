@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace Регистрация_машин
@@ -7,7 +8,7 @@ namespace Регистрация_машин
     class CarCheckingSystem
     {
         private List<AVehicle> carList = new List<AVehicle>();
-        private List<string> NumStolenCars = new List<string>(); 
+        public List<string> NumStolenCars = new List<string>(); 
         private Reporter reporter = new Reporter();
         public event Action<AVehicle, string> HandlerInfoCar;
        
