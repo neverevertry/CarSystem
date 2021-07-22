@@ -3,9 +3,9 @@ using System.IO;
 
 namespace Регистрация_машин
 {
-    class ReadIntoBaseToListAvehicle
+    static class ReadIntoBaseToListAvehicle
     {
-        public void ReadIntoBaseToListHijackedCar(CarCheckingSystem ccs)
+        public static void ReadIntoBaseToListHijackedCar(CarCheckingSystem ccs)
         {
             Console.WriteLine("Укажите путь к файлу");
             string path = Console.ReadLine();

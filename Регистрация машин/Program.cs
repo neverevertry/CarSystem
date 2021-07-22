@@ -24,10 +24,7 @@ namespace Регистрация_машин
                         if (Console.ReadKey(true).Key == ConsoleKey.Q)
                             break;
                         if (Console.ReadKey(true).Key == ConsoleKey.I)
-                        {
-                            ReadIntoBaseToListAvehicle RIBTLA = new ReadIntoBaseToListAvehicle();
-                            RIBTLA.ReadIntoBaseToListHijackedCar(ccs);
-                        }
+                            ReadIntoBaseToListAvehicle.ReadIntoBaseToListHijackedCar(ccs);
                     }
                 }
             }
