@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace Регистрация_машин
@@ -71,6 +72,17 @@ namespace Регистрация_машин
         public Reporter StopSystem()
         {
             return GetReport();
+        }
+
+        private void ReadIntoTheList()
+        {
+            string path = @"C:\Users\XE\source\repos\Регистрация машин\Nomer.txt";
+            StreamReader sr = new StreamReader(path);
+            string line;
+            while ((line = sr.ReadLine()) != null)
+            {
+                NumStolenCars.Add(line);
+            }
         }
     }
 }
