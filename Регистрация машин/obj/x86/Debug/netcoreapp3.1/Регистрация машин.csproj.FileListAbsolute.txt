@@ -1,0 +1,17 @@
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.AssemblyInfoInputs.cache
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.AssemblyInfo.cs
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.csproj.CoreCompileInputs.cache
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Регистрация машин.exe
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Регистрация машин.deps.json
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Регистрация машин.runtimeconfig.json
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Регистрация машин.runtimeconfig.dev.json
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Регистрация машин.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Регистрация машин.pdb
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.pdb
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.csproj.AssemblyReference.cache
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.csproj.CopyComplete
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.pdb
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.genruntimeconfig.cache

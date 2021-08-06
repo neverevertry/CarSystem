@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Регистрация_машин
 {
-    class Reporter
+    public class Reporter
     {
         public int CarCount { get; set; }
         public int CargoCount { get; set; }

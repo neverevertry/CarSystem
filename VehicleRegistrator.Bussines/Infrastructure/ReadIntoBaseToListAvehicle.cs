@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Регистрация_машин
 {
-    static class ReadIntoBaseToListAvehicle
+    public static class ReadIntoBaseToListAvehicle
     {
         public static void ReadIntoBaseToListHijackedCar(CarCheckingSystem ccs)
         {

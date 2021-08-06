@@ -1,0 +1,14 @@
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\bin\Debug\net6.0-windows\VehicleRegistrator.WinForms.exe
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\bin\Debug\net6.0-windows\VehicleRegistrator.WinForms.deps.json
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\bin\Debug\net6.0-windows\VehicleRegistrator.WinForms.runtimeconfig.json
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\bin\Debug\net6.0-windows\VehicleRegistrator.WinForms.dll
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\bin\Debug\net6.0-windows\ref\VehicleRegistrator.WinForms.dll
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\bin\Debug\net6.0-windows\VehicleRegistrator.WinForms.pdb
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\obj\Debug\net6.0-windows\VehicleRegistrator.WinForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\obj\Debug\net6.0-windows\VehicleRegistrator.WinForms.AssemblyInfoInputs.cache
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\obj\Debug\net6.0-windows\VehicleRegistrator.WinForms.AssemblyInfo.cs
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\obj\Debug\net6.0-windows\VehicleRegistrator.WinForms.csproj.CoreCompileInputs.cache
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\obj\Debug\net6.0-windows\VehicleRegistrator.WinForms.dll
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\obj\Debug\net6.0-windows\ref\VehicleRegistrator.WinForms.dll
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\obj\Debug\net6.0-windows\VehicleRegistrator.WinForms.pdb
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.WinForms\obj\Debug\net6.0-windows\VehicleRegistrator.WinForms.genruntimeconfig.cache

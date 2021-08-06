@@ -5,14 +5,15 @@ using System.Linq;
 
 namespace Регистрация_машин
 {
-    class CarCheckingSystem
+    public class CarCheckingSystem
     {
         private List<AVehicle> carList = new List<AVehicle>();
         public List<string> NumStolenCars = new List<string>(); 
         private Reporter reporter = new Reporter();
         public event Action<AVehicle, string> HandlerInfoCar;
+        private bool flag = false;
        
-        private void MonitorInfo(AVehicle transoprt)
+        public void MonitorInfo(AVehicle transoprt)
         {
             if (transoprt is Car)
             {
@@ -34,7 +35,7 @@ namespace Регистрация_машин
             }
         }
 
-        private Reporter GetReport()
+        public Reporter GetReport()
         {
             reporter.TotalPassedCars = reporter.CarCount + reporter.BusCount + reporter.CargoCount;
             reporter.TotalSpeedViolatedCars = carList.Count();
@@ -63,14 +64,15 @@ namespace Регистрация_машин
 
         public void StartSystem()
         {
-            AVehicle avh = RandomVehicleGenerator.GenerateRandomVehicle();
-            MonitorInfo(avh);
-            Excess(avh);
-            CheckStolenCar(avh);
+             AVehicle avh = RandomVehicleGenerator.GenerateRandomVehicle();
+             MonitorInfo(avh);
+             Excess(avh);
+             CheckStolenCar(avh);
         }
 
         public Reporter StopSystem()
         {
+            flag = false;
             return GetReport();
         }
     }

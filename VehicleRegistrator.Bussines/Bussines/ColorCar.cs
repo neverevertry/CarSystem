@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Регистрация_машин
 {
-    enum ColorCar 
+    public enum ColorCar 
     { 
         Blue, 
         Red, 

@@ -1,0 +1,4 @@
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\Debug\netcoreapp6.0\Регистрация машин.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\Debug\netcoreapp6.0\Регистрация машин.AssemblyInfoInputs.cache
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\Debug\netcoreapp6.0\Регистрация машин.AssemblyInfo.cs
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\Debug\netcoreapp6.0\Регистрация машин.csproj.CoreCompileInputs.cache

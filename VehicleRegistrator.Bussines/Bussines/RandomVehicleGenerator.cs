@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Регистрация_машин
 {
-    static class RandomVehicleGenerator
+    public static class RandomVehicleGenerator
     {
         private const string AvailableValuesForRegNumber = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890";
         static public AVehicle GenerateRandomVehicle()

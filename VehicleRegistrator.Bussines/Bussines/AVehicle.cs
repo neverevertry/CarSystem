@@ -1,6 +1,6 @@
 ﻿namespace Регистрация_машин
 {
-    abstract class AVehicle
+    public abstract class AVehicle
     {
         protected int PassangerNumbers;
         protected int MaxSpeed;
