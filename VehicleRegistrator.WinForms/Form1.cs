@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Регистрация_машин;
+using VehicleRegistrator.Bussines;
 
 namespace VehicleRegistrator.WinForms
 {
@@ -58,7 +58,6 @@ namespace VehicleRegistrator.WinForms
         private void CarInfo (AVehicle car, string report)
         {
             richTextBox1.Invoke(new Action(() => richTextBox1.Text += car.ShowInfo() + report));
-            richTextBox1.Invoke(new Action(() => richTextBox1.SelectedText = "\r"));
         }
 
         private void ListOfOffenders(Reporter report)

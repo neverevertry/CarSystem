@@ -1,4 +1,4 @@
-﻿namespace Регистрация_машин
+﻿namespace VehicleRegistrator.Bussines
 {
     public abstract class AVehicle
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Регистрация_машин
+namespace VehicleRegistrator.Bussines
 {
     class Bus : AVehicle
     {

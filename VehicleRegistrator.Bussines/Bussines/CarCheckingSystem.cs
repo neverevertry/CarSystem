@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Регистрация_машин
+namespace VehicleRegistrator.Bussines
 {
     public class CarCheckingSystem
     {

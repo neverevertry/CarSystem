@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Регистрация_машин</RootNamespace>
+    <RootNamespace>Register_car</RootNamespace>
     <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
 

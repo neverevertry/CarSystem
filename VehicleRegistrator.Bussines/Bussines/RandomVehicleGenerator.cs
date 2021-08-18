@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Регистрация_машин
+namespace VehicleRegistrator.Bussines
 {
     public static class RandomVehicleGenerator
     {

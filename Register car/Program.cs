@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using VehicleRegistrator.Bussines;
 
-namespace Регистрация_машин
+namespace Register_car
 {
     class Program
     {
@@ -24,7 +25,10 @@ namespace Регистрация_машин
                         if (Console.ReadKey(true).Key == ConsoleKey.Q)
                             break;
                         if (Console.ReadKey(true).Key == ConsoleKey.I)
-                            ReadIntoBaseToListAvehicle.ReadIntoBaseToListHijackedCar(ccs);
+                        {
+                            IReadToListAvehicle rtla = new ReadIntoFileToListAvehicle();
+                            ccs.ImportNumberStoleCars(rtla);
+                        }
                     }
                 }
             }

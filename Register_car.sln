@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Blend for Visual Studio Version 17
 VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Регистрация машин", "Регистрация машин\Регистрация машин.csproj", "{477FA562-D180-40E5-B1B1-1D1C36D3C428}"
-	ProjectSection(ProjectDependencies) = postProject
-		{7B9BB083-E68B-4062-A318-A2A94360E7EC} = {7B9BB083-E68B-4062-A318-A2A94360E7EC}
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleRegistrator.Bussines", "VehicleRegistrator.Bussines\VehicleRegistrator.Bussines.csproj", "{7B9BB083-E68B-4062-A318-A2A94360E7EC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleRegistrator.WinForms", "VehicleRegistrator.WinForms\VehicleRegistrator.WinForms.csproj", "{E81BBF13-A24B-4F67-8B75-478D90B609D3}"
