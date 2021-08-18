@@ -15,3 +15,35 @@ C:\Users\XE\source\repos\Регистрация машин\Регистраци�
 C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.dll
 C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.pdb
 C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\obj\x86\Debug\netcoreapp3.1\Регистрация машин.genruntimeconfig.cache
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Azure.Identity.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\XE\source\repos\Регистрация машин\Регистрация машин\bin\x86\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll

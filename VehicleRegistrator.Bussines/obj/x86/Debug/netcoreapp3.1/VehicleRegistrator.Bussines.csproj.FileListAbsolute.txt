@@ -1,10 +1,10 @@
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\bin\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.deps.json
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\bin\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.dll
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\bin\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.pdb
+C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\obj\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.csproj.AssemblyReference.cache
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\obj\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\obj\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.AssemblyInfoInputs.cache
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\obj\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.AssemblyInfo.cs
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\obj\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.csproj.CoreCompileInputs.cache
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\obj\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.dll
 C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\obj\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.pdb
-C:\Users\XE\source\repos\Регистрация машин\VehicleRegistrator.Bussines\obj\x86\Debug\netcoreapp3.1\VehicleRegistrator.Bussines.csproj.AssemblyReference.cache

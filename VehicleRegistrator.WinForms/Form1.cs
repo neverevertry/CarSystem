@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,8 +15,9 @@ namespace VehicleRegistrator.WinForms
 {
     public partial class Form1 : Form
     {
-        CarCheckingSystem ccs = new CarCheckingSystem();
+        CarCheckingSystem ccs = new CarCheckingSystem();    
         CancellationTokenSource cts;
+
         public Form1()
         {
             InitializeComponent();
@@ -43,7 +45,7 @@ namespace VehicleRegistrator.WinForms
             ListOfOffenders(report);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -55,14 +57,28 @@ namespace VehicleRegistrator.WinForms
 
         private void CarInfo (AVehicle car, string report)
         {
-            textBox1.Text = car.ShowInfo() + report;
+            richTextBox1.Invoke(new Action(() => richTextBox1.Text += car.ShowInfo() + report));
+            richTextBox1.Invoke(new Action(() => richTextBox1.SelectedText = "\r"));
         }
 
         private void ListOfOffenders(Reporter report)
         {
-            textBox2.Text = "Кол-во легковых машин" + report.CarCount + "Кол-во грузовых автомобилей: " + report.CargoCount
-            + "Кол-во автобусов: " + report.BusCount + "Общее кол-во машин: " + report.TotalPassedCars + "Кол-во машин нарувшие скоростной режим: " + report.TotalSpeedViolatedCars
-            + "Кол-во машин зафиксированных в угоне: " + report.CountOfStolenCars;
+            textBox2.Text = "Кол-во легковых машин " + report.CarCount + " Кол-во грузовых автомобилей: " + report.CargoCount
+            + " Кол-во автобусов: " + report.BusCount + " Общее кол-во машин: " + report.TotalPassedCars + " Кол-во машин нарувшие скоростной режим: " + report.TotalSpeedViolatedCars
+            + " Кол-во машин зафиксированных в угоне: " + report.CountOfStolenCars + "\n";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            IReadToListAvehicle rtla = new ReadIntoDBToListAvehicle();
+            ccs.ImportNumberStoleCars(rtla);
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            IReadToListAvehicle rtla = new ReadIntoFileToListAvehicle();
+            ccs.ImportNumberStoleCars(rtla);
         }
     }
 }

@@ -19,7 +19,7 @@
 
         public string ShowInfo()
         {
-            return $"Скорость: {CurrentSpeed}, Регистрационный номер машины: {RegistrationNumb}";
+            return $"Скорость: {CurrentSpeed}, Регистрационный номер машины: {RegistrationNumb} \n";
         }
 
     }

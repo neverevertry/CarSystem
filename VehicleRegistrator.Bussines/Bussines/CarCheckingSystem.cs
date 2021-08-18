@@ -8,10 +8,9 @@ namespace Регистрация_машин
     public class CarCheckingSystem
     {
         private List<AVehicle> carList = new List<AVehicle>();
-        public List<string> NumStolenCars = new List<string>(); 
+        private List<string> NumStolenCars = new List<string>(); 
         private Reporter reporter = new Reporter();
         public event Action<AVehicle, string> HandlerInfoCar;
-        private bool flag = false;
        
         public void MonitorInfo(AVehicle transoprt)
         {
@@ -52,6 +51,11 @@ namespace Регистрация_машин
             }
         }
 
+        public void ImportNumberStoleCars(IReadToListAvehicle rtla)
+        {
+            NumStolenCars = rtla.ReadToListAvehicle();
+        }
+
         private void CheckStolenCar(AVehicle car)
         {
             if (NumStolenCars.Contains(car.RegistrationNumb))
@@ -72,7 +76,6 @@ namespace Регистрация_машин
 
         public Reporter StopSystem()
         {
-            flag = false;
             return GetReport();
         }
     }
