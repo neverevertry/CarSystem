@@ -31,74 +31,86 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.StolenCar = new System.Windows.Forms.RichTextBox();
+            this.IntruderCar = new System.Windows.Forms.RichTextBox();
+            this.DataUpload = new System.Windows.Forms.ComboBox();
+            this.CurrentCarWindow = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 130);
+            this.button1.Location = new System.Drawing.Point(0, 53);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.buttonStartSystem);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(605, 130);
+            this.button2.Location = new System.Drawing.Point(0, 125);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "stop";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Click += new System.EventHandler(this.buttonStopSystem);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(0, 338);
+            this.textBox2.Location = new System.Drawing.Point(299, 324);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(698, 23);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
+            this.textBox2.Size = new System.Drawing.Size(749, 23);
+            this.textBox2.TabIndex = 10;
             // 
-            // richTextBox1
+            // StolenCar
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(183, 28);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(309, 269);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.StolenCar.Location = new System.Drawing.Point(12, 261);
+            this.StolenCar.Name = "StolenCar";
+            this.StolenCar.Size = new System.Drawing.Size(206, 256);
+            this.StolenCar.TabIndex = 7;
+            this.StolenCar.Text = "";
+            this.StolenCar.TextChanged += new System.EventHandler(this.WindowStolenCar);
             // 
-            // button3
+            // IntruderCar
             // 
-            this.button3.Location = new System.Drawing.Point(0, 309);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "IntoDB";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.IntruderCar.Location = new System.Drawing.Point(299, 391);
+            this.IntruderCar.Name = "IntruderCar";
+            this.IntruderCar.Size = new System.Drawing.Size(749, 167);
+            this.IntruderCar.TabIndex = 8;
+            this.IntruderCar.Text = "";
+            this.IntruderCar.TextChanged += new System.EventHandler(this.WindowIntruderCar);
             // 
-            // button4
+            // DataUpload
             // 
-            this.button4.Location = new System.Drawing.Point(605, 309);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "IntoFile";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.DataUpload.FormattingEnabled = true;
+            this.DataUpload.Items.AddRange(new object[] {
+            "1.File",
+            "2.DataBase"});
+            this.DataUpload.Location = new System.Drawing.Point(60, 535);
+            this.DataUpload.Name = "DataUpload";
+            this.DataUpload.Size = new System.Drawing.Size(121, 23);
+            this.DataUpload.TabIndex = 9;
+            this.DataUpload.SelectedIndexChanged += new System.EventHandler(this.SelectDataUpload);
+            // 
+            // CurrentCarWindow
+            // 
+            this.CurrentCarWindow.FormattingEnabled = true;
+            this.CurrentCarWindow.ItemHeight = 15;
+            this.CurrentCarWindow.Location = new System.Drawing.Point(299, 53);
+            this.CurrentCarWindow.Name = "CurrentCarWindow";
+            this.CurrentCarWindow.Size = new System.Drawing.Size(749, 229);
+            this.CurrentCarWindow.TabIndex = 11;
+            this.CurrentCarWindow.SelectedIndexChanged += new System.EventHandler(this.CurrentCarWindow_SelectedIndexChanged);
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(710, 408);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(1127, 590);
+            this.Controls.Add(this.CurrentCarWindow);
+            this.Controls.Add(this.DataUpload);
+            this.Controls.Add(this.IntruderCar);
+            this.Controls.Add(this.StolenCar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -113,9 +125,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.RichTextBox StolenCar;
+        private System.Windows.Forms.RichTextBox IntruderCar;
+        private System.Windows.Forms.ComboBox DataUpload;
+        private System.Windows.Forms.ListBox CurrentCarWindow;
     }
 }
 

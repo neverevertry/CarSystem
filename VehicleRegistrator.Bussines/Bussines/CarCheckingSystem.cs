@@ -8,9 +8,11 @@ namespace VehicleRegistrator.Bussines
     public class CarCheckingSystem
     {
         private List<AVehicle> carList = new List<AVehicle>();
-        private List<string> NumStolenCars = new List<string>(); 
+        public List<string> NumStolenCars = new List<string>(); 
         private Reporter reporter = new Reporter();
         public event Action<AVehicle, string> HandlerInfoCar;
+        public event Action<AVehicle, string> HandlerIntruderCar;
+
        
         public void MonitorInfo(AVehicle transoprt)
         {
@@ -47,7 +49,7 @@ namespace VehicleRegistrator.Bussines
             {
                 carList.Add(transoprt);
                 string ReportSpeed = "Превышение скорости";
-                HandlerInfoCar.Invoke(transoprt, ReportSpeed);
+                HandlerIntruderCar.Invoke(transoprt, ReportSpeed);
             }
         }
 
@@ -55,13 +57,13 @@ namespace VehicleRegistrator.Bussines
         {
             NumStolenCars = rtla.ReadToListAvehicle();
         }
-
+         
         private void CheckStolenCar(AVehicle car)
         {
             if (NumStolenCars.Contains(car.RegistrationNumb))
             {
                 string InterceptionReport = "Перехват";
-                HandlerInfoCar.Invoke(car, InterceptionReport);
+                HandlerIntruderCar.Invoke(car, InterceptionReport);
                 reporter.CountOfStolenCars++;
             }
         }
