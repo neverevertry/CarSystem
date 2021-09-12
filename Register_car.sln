@@ -1,16 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31521.260
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleRegistrator.Bussines", "VehicleRegistrator.Bussines\VehicleRegistrator.Bussines.csproj", "{7B9BB083-E68B-4062-A318-A2A94360E7EC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleRegistrator.WinForms", "VehicleRegistrator.WinForms\VehicleRegistrator.WinForms.csproj", "{E81BBF13-A24B-4F67-8B75-478D90B609D3}"
 	ProjectSection(ProjectDependencies) = postProject
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662} = {74ECFC31-5A14-4D93-A038-1EC55AAAC662}
 		{7B9BB083-E68B-4062-A318-A2A94360E7EC} = {7B9BB083-E68B-4062-A318-A2A94360E7EC}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Регистрация машин", "Register car\Регистрация машин.csproj", "{334595F3-5A9F-4356-9C07-523DF8436488}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleRegistrator.DataAccessLayer", "VehicleRegistrator.DataAccessLayer\VehicleRegistrator.DataAccessLayer.csproj", "{74ECFC31-5A14-4D93-A038-1EC55AAAC662}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +47,14 @@ Global
 		{334595F3-5A9F-4356-9C07-523DF8436488}.Release|Any CPU.Build.0 = Release|Any CPU
 		{334595F3-5A9F-4356-9C07-523DF8436488}.Release|x86.ActiveCfg = Release|x86
 		{334595F3-5A9F-4356-9C07-523DF8436488}.Release|x86.Build.0 = Release|x86
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662}.Debug|x86.Build.0 = Debug|Any CPU
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662}.Release|x86.ActiveCfg = Release|Any CPU
+		{74ECFC31-5A14-4D93-A038-1EC55AAAC662}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
